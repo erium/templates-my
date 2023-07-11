@@ -1,6 +1,26 @@
 {
     "categories": [
         {
+            "name": "Image Generation",
+            "description": "Boards with Prompt-Trees for image generation.",
+            "templates": [
+                {
+                    "name": "Stable Diffusion Generator",
+                    "isOverview": false,
+                    "description": "Create prompts for Stable Diffusion",
+                    "automaticArguments": {
+                        "author_name": "{{user.name}}",
+                        "author_initials": "{{user.initials}}",
+                        "timestamp": "{{timestamp}}",
+                        "source_directory": "image_generation/stable_diffusion",
+                        "target_directory": "{{directoryPath}}"
+                    },
+                    "userArguments": {},
+                    "files": []
+                }
+            ]
+        },
+        {
             "name": "Generic",
             "description": "Boards with Prompt-Trees for generic tasks.",
             "templates": [
@@ -13,6 +33,20 @@
                         "author_initials": "{{user.initials}}",
                         "timestamp": "{{timestamp}}",
                         "source_directory": "generic/bot_vs_bot",
+                        "target_directory": "{{directoryPath}}"
+                    },
+                    "userArguments": {},
+                    "files": []
+                },
+                {
+                    "name": "Bot Generator",
+                    "isOverview": false,
+                    "description": "Generate a bot to complete a task.",
+                    "automaticArguments": {
+                        "author_name": "{{user.name}}",
+                        "author_initials": "{{user.initials}}",
+                        "timestamp": "{{timestamp}}",
+                        "source_directory": "generic/bot_generator",
                         "target_directory": "{{directoryPath}}"
                     },
                     "userArguments": {},
