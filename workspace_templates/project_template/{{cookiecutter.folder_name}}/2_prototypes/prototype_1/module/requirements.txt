@@ -1,3 +1,0 @@
-# list of required packages
-numpy>1.18
-pandas>1.3
