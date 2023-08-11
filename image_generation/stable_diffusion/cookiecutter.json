@@ -1,4 +1,5 @@
 {
-    "folder_name": ["__new_workspace__"]
+    "folder_name": ["__new_workspace__"],
+    "timestamp": "{{ cookiecutter.timestamp }}"
 }
   
